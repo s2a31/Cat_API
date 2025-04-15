@@ -1,0 +1,41 @@
+html {
+  font-size: 16px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(147, 220, 147));
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(38, 82, 38);
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1;
+}
+
+main button {
+  color: rgb(38, 82, 38);
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px rgb(56, 98, 56);
+  letter-spacing: 1px;
+  border: none;
+  background-color: rgb(126, 232, 136);
+  box-shadow: 2px 2px 8px rgb(134, 203, 143);
+  margin: 2rem;
+  padding: 1em 1em;
+  border-radius: 0.8em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
