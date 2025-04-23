@@ -1,3 +1,7 @@
+:root {
+  --text-color: rgb(38, 82, 38);
+}
+
 html {
   font-size: 16px;
   font-family: "Pacifico", cursive;
@@ -12,21 +16,26 @@ body {
 
 h1 {
   text-align: center;
-  color: rgb(38, 82, 38);
+  color: var(--text-color);
 }
 
 
-main {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 1;
 }
 
-main button {
-  color: rgb(38, 82, 38);
+#image {
+  border: 0.8rem outset silver;
+  box-shadow: 7px 7px 10px silver;
+  max-width: 90%;
+}
+
+#load-button {
+  color: var(--text-color);
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   text-shadow: 1px 1px 2px rgb(56, 98, 56);
   letter-spacing: 1px;
   border: none;
@@ -38,4 +47,24 @@ main button {
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  #load-button {
+    font-size: 1.3rem
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  #load-button {
+    font-size: 1.5rem
+  }
 }
