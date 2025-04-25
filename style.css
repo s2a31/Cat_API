@@ -26,10 +26,30 @@ h1 {
   align-items: center;
 }
 
+#message {
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
+
 #image {
   border: 0.8rem outset silver;
   box-shadow: 7px 7px 10px silver;
   max-width: 90%;
+}
+
+.fade-zoom-out {
+  opacity: 0;
+  transform: scale(0.80);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  transform-origin: center center;
+}
+
+.fade-zoom-in {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  transform-origin: center center;
+  will-change: opacity, transform;
 }
 
 #load-button {
@@ -54,6 +74,10 @@ h1 {
     font-size: 2.5rem;
   }
 
+  #message {
+    font-size: 2rem;
+  }
+
   #load-button {
     font-size: 1.3rem
   }
@@ -62,6 +86,10 @@ h1 {
 @media (min-width: 768px) {
   h1 {
     font-size: 3rem;
+  }
+
+  #message {
+    font-size: 2.5rem;
   }
 
   #load-button {
